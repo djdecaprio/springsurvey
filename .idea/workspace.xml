@@ -62,7 +62,7 @@
       <file leaf-file-name="dashboard.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/surveys/dashboard.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="56" selection-start="865" selection-end="865" vertical-scroll-proportion="0.5886628">
+            <state line="20" column="77" selection-start="959" selection-end="959" vertical-scroll-proportion="0.4360465">
               <folding />
             </state>
           </provider>
@@ -903,7 +903,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/surveys/dashboard.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="56" selection-start="865" selection-end="865" vertical-scroll-proportion="0.5886628">
+        <state line="20" column="77" selection-start="959" selection-end="959" vertical-scroll-proportion="0.4360465">
           <folding />
         </state>
       </provider>

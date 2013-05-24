@@ -14,11 +14,11 @@
       <th>GPA</th>
     </tr>
       <tr>
-        <TD><%= (Survey.find_all_by_gender(2).count.to_f/Survey.count.to_f)*100.0 %>%</TD>
-        <TD><%= Survey.average('ecnounters') %></TD>
-        <TD><%= Survey.average('age') %></TD>
-        <TD><%= Survey.average('credits') %></TD>
-        <TD><%= Survey.average('gpa') %></TD>
+        <TD><%= number_with_precision((Survey.find_all_by_gender(2).count.to_f/Survey.count.to_f)*100.0, :precision => 2) %>%</TD>
+        <TD><%= number_with_precision(Survey.average('ecnounters') , :precision => 2)%></TD>
+        <TD><%= number_with_precision(Survey.average('age'), :precision => 2) %></TD>
+        <TD><%= number_with_precision(Survey.average('credits'), :precision => 2) %></TD>
+        <TD><%= number_with_precision(Survey.average('gpa'), :precision => 2) %></TD>
       </tr>
       </table>
 
