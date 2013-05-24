@@ -8,7 +8,7 @@
     <file path="$PROJECT_DIR$/log/development.log" changelist="bf61c8d4-01fd-4a67-9419-3c21fade9f13" time="1369410061714" ignored="false" />
     <file path="/application.html.erb" changelist="bf61c8d4-01fd-4a67-9419-3c21fade9f13" time="1369409490683" ignored="false" />
     <file path="/index.html.erb" changelist="bf61c8d4-01fd-4a67-9419-3c21fade9f13" time="1369409558506" ignored="false" />
-    <file path="/dashboard.html.erb" changelist="bf61c8d4-01fd-4a67-9419-3c21fade9f13" time="1369423297836" ignored="false" />
+    <file path="/dashboard.html.erb" changelist="bf61c8d4-01fd-4a67-9419-3c21fade9f13" time="1369424789371" ignored="false" />
     <file path="/surveys_controller.rb" changelist="bf61c8d4-01fd-4a67-9419-3c21fade9f13" time="1369410364970" ignored="false" />
     <file path="/_form.html.erb" changelist="bf61c8d4-01fd-4a67-9419-3c21fade9f13" time="1369413040469" ignored="false" />
     <file path="/new.html.erb" changelist="bf61c8d4-01fd-4a67-9419-3c21fade9f13" time="1369411636528" ignored="false" />
@@ -62,7 +62,7 @@
       <file leaf-file-name="dashboard.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/surveys/dashboard.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="44" selection-start="197" selection-end="197" vertical-scroll-proportion="0.0872093">
+            <state line="27" column="56" selection-start="865" selection-end="865" vertical-scroll-proportion="0.5886628">
               <folding />
             </state>
           </provider>
@@ -153,8 +153,8 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="247" />
-    <option name="y" value="22" />
+    <option name="x" value="215" />
+    <option name="y" value="40" />
     <option name="width" value="2127" />
     <option name="height" value="1353" />
   </component>
@@ -713,7 +713,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="247" y="22" width="2127" height="1353" extended-state="0" />
+    <frame x="215" y="40" width="2127" height="1353" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -903,7 +903,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/surveys/dashboard.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="44" selection-start="197" selection-end="197" vertical-scroll-proportion="0.0872093">
+        <state line="27" column="56" selection-start="865" selection-end="865" vertical-scroll-proportion="0.5886628">
           <folding />
         </state>
       </provider>
