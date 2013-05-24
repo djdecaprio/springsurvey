@@ -1,0 +1,36 @@
+<div class="row-fluid">
+<div class="span12">
+<h1>Spring Surveys</h1>
+
+  <table class="table table-condensed table-hover">  <tr>
+    <th>Gender</th>
+    <th>Ecnounters</th>
+    <th>Age</th>
+    <th>Credits</th>
+    <th>Gpa</th>
+    <th>User</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @surveys.each do |survey| %>
+  <tr>
+    <td><%= survey.gender %></td>
+    <td><%= survey.ecnounters %></td>
+    <td><%= survey.age %></td>
+    <td><%= survey.credits %></td>
+    <td><%= survey.gpa %></td>
+    <td><%= survey.user_id %></td>
+    <td><%= link_to 'Show', survey %></td>
+    <td><%= link_to 'Edit', edit_survey_path(survey) %></td>
+    <td><%= link_to 'Destroy', survey, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Survey', new_survey_path %>
+</div>
+</div>

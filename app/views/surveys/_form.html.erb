@@ -1,0 +1,60 @@
+<div class="row-fluid">
+  <div class="span12">
+    <h4>Spring Survey</h4>
+    <%= form_for(@survey, :html => { :class => 'form-horizontal'}) do |f| %>
+  <% if @survey.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@survey.errors.count, "error") %> prohibited this survey from being saved:</h2>
+
+      <ul>
+      <% @survey.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+
+        <div class="control-group">
+          <label class="control-label" for="selectGender">Gender:</label>
+          <div class="controls">
+            <%= f.select(:gender, [['Female', 1], ['Male', 2]]) %>
+          </div>
+        </div>
+
+        <div class="control-group">
+          <label class="control-label" for="inputEncounters">Encounters Per Week:</label>
+          <div class="controls">
+            <%= f.text_field :ecnounters%>
+          </div>
+        </div>
+
+        <div class="control-group">
+          <label class="control-label" for="inputAge">Age:</label>
+          <div class="controls">
+            <%= f.number_field :age %>
+          </div>
+        </div>
+
+        <div class="control-group">
+          <label class="control-label" for="inputAge">Credit Hours this Quarter:</label>
+          <div class="controls">
+            <%= f.number_field :credits %>
+          </div>
+        </div>
+
+        <div class="control-group">
+          <label class="control-label" for="inputAge">GPA:</label>
+          <div class="controls">
+            <%= f.text_field :gpa %>
+          </div>
+        </div>
+
+    <%= f.hidden_field :user_id, :value => "45" %>
+  <div class="actions">
+    <%= f.submit "Submit Survey", class: 'btn' %>
+  </div>
+<% end %>
+
+      </div>
+    </div>

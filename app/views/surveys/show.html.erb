@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Gender:</b>
+  <%= @survey.gender %>
+</p>
+
+<p>
+  <b>Ecnounters:</b>
+  <%= @survey.ecnounters %>
+</p>
+
+<p>
+  <b>Age:</b>
+  <%= @survey.age %>
+</p>
+
+<p>
+  <b>Credits:</b>
+  <%= @survey.credits %>
+</p>
+
+<p>
+  <b>Gpa:</b>
+  <%= @survey.gpa %>
+</p>
+
+<p>
+  <b>User:</b>
+  <%= @survey.user_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_survey_path(@survey) %> |
+<%= link_to 'Back', surveys_path %>

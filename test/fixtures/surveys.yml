@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  gender: 1
+  ecnounters: 1.5
+  age: 1
+  credits: 1
+  gpa: 1.5
+  user_id: 1
+
+two:
+  gender: 1
+  ecnounters: 1.5
+  age: 1
+  credits: 1
+  gpa: 1.5
+  user_id: 1
