@@ -1,13 +1,15 @@
 <div class="row-fluid">
   <div class="span12">
     <h1>Spring Surveys</h1>
+    <%= button_to "Take the Survey", new_survey_path, :id => "survey_button",
+                  :class => "btn btn-primary", :method => :get %>
 
     <table class="table table-condensed table-hover">  <tr>
       <th>Gender</th>
       <th>Encounters/Week</th>
       <th>Age</th>
       <th>Credits</th>
-      <th>Gpa</th>
+      <th>GPA</th>
 
     </tr>
 
@@ -28,7 +30,5 @@
     </table>
 
     <br />
-
-    <%= link_to 'New Survey', new_survey_path %>
   </div>
 </div>
