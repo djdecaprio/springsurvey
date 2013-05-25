@@ -1,55 +1,95 @@
 <div class="row-fluid">
   <div class="span12">
+
     <h1>Spring Surveys</h1>
     <%= button_to "Take the Survey", new_survey_path, :id => "survey_button",
                   :class => "btn btn-primary", :method => :get %>
 
-    <div class="well well-small">
-    <table class="table table-condensed table-hover">  <tr>
-      <caption>Averages for <%= Survey.count %> Completed Surveys</caption>
-      <th>Dude%</th>
-      <th>Enc/Week</th>
-      <th>Age</th>
-      <th>Credits</th>
-      <th>GPA</th>
-    </tr>
-      <tr>
-        <TD><%= number_with_precision((Survey.find_all_by_gender(2).count.to_f/Survey.count.to_f)*100.0, :precision => 2) %>%</TD>
-        <TD><%= number_with_precision(Survey.average('ecnounters') , :precision => 2)%></TD>
-        <TD><%= number_with_precision(Survey.average('age'), :precision => 2) %></TD>
-        <TD><%= number_with_precision(Survey.average('credits'), :precision => 2) %></TD>
-        <TD><%= number_with_precision(Survey.average('gpa'), :precision => 2) %></TD>
-      </tr>
-      </table>
+    <div class="accordion" id="accordion2">
+      <div class="accordion-group">
+        <div class="accordion-heading">
+          <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+            <B>Summary of <%= Survey.count %> Completed Surveys</B>
+          </a>
+        </div>
+        <small>
+        <div id="collapseOne" class="accordion-body collapse in">
+          <div class="well well-small">
+            <table class="table table-condensed table-hover">
+              <TR><th colspan=5>Averages</th></TR>
+              <Tr>
+              <th>Dude%</th>
+              <th>Enc/Wk</th>
+              <th>Age</th>
+              <th>Credits</th>
+              <th>GPA</th>
+            </tr>
+              <tr>
+                <TD><%= number_with_precision((Survey.find_all_by_gender(2).count.to_f/Survey.count.to_f)*100.0, :precision => 2) %>%</TD>
+                <TD><%= number_with_precision(Survey.average('ecnounters') , :precision => 2)%></TD>
+                <TD><%= number_with_precision(Survey.average('age'), :precision => 2) %></TD>
+                <TD><%= number_with_precision(Survey.average('credits'), :precision => 2) %></TD>
+                <TD><%= number_with_precision(Survey.average('gpa'), :precision => 2) %></TD>
+              </tr>
+              <TR><th colspan=5>Correlation Matrix</th></TR>
+              <% the_matrix = Survey.correlation_matrix %>
+              <% matrix_titles = ['Enc/Wk', 'Age', 'Credits', 'GPA'] %>
+              <% for i in (0..3) %>
+                  <tr>
+                    <td><%= matrix_titles[i] %></td>
+                    <% the_matrix[i].each do |x| %>
+                        <td><%= number_with_precision(x, :precision => 2) %></td>
+                    <% end %>
+                  </tr>
+              <% end %>
+            </table>
 
+          </div>
+        </div>
+            </small>
+      </div>
+
+
+
+      <div class="accordion-group">
+        <div class="accordion-heading">
+          <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
+            Raw Data
+          </a>
+        </div>
+        <div id="collapseTwo" class="accordion-body collapse">
+          <div class="accordion-inner">
+            <table class="table table-condensed table-striped table-hover">  <tr>
+              <th>Gender</th>
+              <th>Enc/Wk</th>
+              <th>Age</th>
+              <th>Credits</th>
+              <th>GPA</th>
+
+            </tr>
+
+              <% @surveys.each do |survey| %>
+                  <tr>
+                    <td><% if survey.gender == 1 %>
+                          Chick
+                      <% else %>
+                          Dude
+                      <% end %></td>
+                    <td><%= survey.ecnounters %></td>
+                    <td><%= survey.age %></td>
+                    <td><%= survey.credits %></td>
+                    <td><%= survey.gpa %></td>
+
+                  </tr>
+              <% end %>
+            </table>
+          </div>
+        </div>
+      </div>
     </div>
 
 
-      <table class="table table-condensed table-striped table-hover">  <tr>
-        <caption>Raw Data</caption>
-        <th>Gender</th>
-      <th>Encounters/Week</th>
-      <th>Age</th>
-      <th>Credits</th>
-      <th>GPA</th>
 
-    </tr>
-
-      <% @surveys.each do |survey| %>
-          <tr>
-            <td><% if survey.gender == 1 %>
-                  Chick
-                  <% else %>
-                  Dude
-                  <% end %></td>
-            <td><%= survey.ecnounters %></td>
-            <td><%= survey.age %></td>
-            <td><%= survey.credits %></td>
-            <td><%= survey.gpa %></td>
-
-          </tr>
-      <% end %>
-    </table>
 
     <br />
   </div>
