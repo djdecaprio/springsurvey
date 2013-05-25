@@ -8,7 +8,7 @@ class Survey < ActiveRecord::Base
     the_gpas = Array.new
 
 
-    the_responses = Survey.all(:conditions => ['ecnounters NOT NULL and age NOT NULL and credits NOT NULL and gpa NOT NULL'])
+    the_responses = Survey.all(:conditions => ['ecnounters IS NOT NULL and age IS NOT NULL and credits IS NOT NULL and gpa IS NOT NULL'])
 
     the_responses.each do |response|
       the_encounters << response.ecnounters

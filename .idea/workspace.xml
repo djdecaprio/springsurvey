@@ -13,7 +13,7 @@
     <file path="/_form.html.erb" changelist="bf61c8d4-01fd-4a67-9419-3c21fade9f13" time="1369413040469" ignored="false" />
     <file path="/new.html.erb" changelist="bf61c8d4-01fd-4a67-9419-3c21fade9f13" time="1369411636528" ignored="false" />
     <file path="/Gemfile" changelist="bf61c8d4-01fd-4a67-9419-3c21fade9f13" time="1369413283577" ignored="false" />
-    <file path="/survey.rb" changelist="bf61c8d4-01fd-4a67-9419-3c21fade9f13" time="1369506665124" ignored="false" />
+    <file path="/survey.rb" changelist="bf61c8d4-01fd-4a67-9419-3c21fade9f13" time="1369509083961" ignored="false" />
     <file path="/Ruby Console" changelist="bf61c8d4-01fd-4a67-9419-3c21fade9f13" time="1369506691648" ignored="false" />
     <file path="/a.dummy" changelist="bf61c8d4-01fd-4a67-9419-3c21fade9f13" time="1369506117465" ignored="false" />
     <file path="/*.regexp" changelist="bf61c8d4-01fd-4a67-9419-3c21fade9f13" time="1369507284365" ignored="false" />
@@ -63,10 +63,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dashboard.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="dashboard.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/surveys/dashboard.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="25" selection-start="474" selection-end="474" vertical-scroll-proportion="0.21290323">
+            <state line="11" column="25" selection-start="474" selection-end="474" vertical-scroll-proportion="-6.875">
               <folding />
             </state>
           </provider>
@@ -81,10 +81,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="survey.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="survey.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/models/survey.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="30" selection-start="562" selection-end="562" vertical-scroll-proportion="0.0">
+            <state line="15" column="49" selection-start="534" selection-end="534" vertical-scroll-proportion="0.281602">
               <folding />
             </state>
           </provider>
@@ -146,9 +146,9 @@
         <option value="$PROJECT_DIR$/app/views/surveys/new.html.erb" />
         <option value="$PROJECT_DIR$/app/views/surveys/_form.html.erb" />
         <option value="$PROJECT_DIR$/Gemfile" />
-        <option value="$PROJECT_DIR$/app/models/survey.rb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
         <option value="$PROJECT_DIR$/app/views/surveys/dashboard.html.erb" />
+        <option value="$PROJECT_DIR$/app/models/survey.rb" />
       </list>
     </option>
   </component>
@@ -1022,13 +1022,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/survey.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="30" selection-start="562" selection-end="562" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/assets/javascripts/bootstrap.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="56" selection-start="145" selection-end="145" vertical-scroll-proportion="0.0">
@@ -1047,7 +1040,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/surveys/dashboard.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="25" selection-start="474" selection-end="474" vertical-scroll-proportion="0.21290323">
+        <state line="11" column="25" selection-start="474" selection-end="474" vertical-scroll-proportion="-6.875">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/survey.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="49" selection-start="534" selection-end="534" vertical-scroll-proportion="0.281602">
           <folding />
         </state>
       </provider>
