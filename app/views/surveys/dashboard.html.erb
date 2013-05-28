@@ -60,6 +60,7 @@
         <div id="collapseTwo" class="accordion-body collapse">
           <div class="accordion-inner">
             <table class="table table-condensed table-striped table-hover">  <tr>
+              <th>Number</th>
               <th>Gender</th>
               <th>Enc/Wk</th>
               <th>Age</th>
@@ -70,6 +71,7 @@
 
               <% @surveys.each do |survey| %>
                   <tr>
+                    <td><%= survey.id %></td>
                     <td><% if survey.gender == 1 %>
                           Chick
                       <% else %>
