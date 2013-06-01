@@ -31,6 +31,22 @@
                 <TD><%= number_with_precision(Survey.average('credits'), :precision => 2) %></TD>
                 <TD><%= number_with_precision(Survey.average('gpa'), :precision => 2) %></TD>
               </tr>
+              <tr>
+                <TD>Max</TD>
+                <TD><%= number_with_precision(Survey.maximum('ecnounters') , :precision => 2)%></TD>
+                <TD><%= number_with_precision(Survey.maximum('age'), :precision => 2) %></TD>
+                <TD><%= number_with_precision(Survey.maximum('credits'), :precision => 2) %></TD>
+                <TD><%= number_with_precision(Survey.maximum('gpa'), :precision => 2) %></TD>
+              </tr>
+              <tr>
+                <TD>Min</TD>
+                <TD><%= number_with_precision(Survey.minimum('ecnounters') , :precision => 2)%></TD>
+                <TD><%= number_with_precision(Survey.minimum('age'), :precision => 2) %></TD>
+                <TD><%= number_with_precision(Survey.minimum('credits'), :precision => 2) %></TD>
+                <TD><%= number_with_precision(Survey.minimum('gpa'), :precision => 2) %></TD>
+              </tr>
+
+
               <TR><th colspan=5>Correlation Matrix</th></TR>
               <% the_matrix = Survey.correlation_matrix %>
               <% matrix_titles = ['Enc/Wk', 'Age', 'Credits', 'GPA'] %>
@@ -57,14 +73,15 @@
             Raw Data
           </a>
         </div>
+        <small>
         <div id="collapseTwo" class="accordion-body collapse">
           <div class="accordion-inner">
             <table class="table table-condensed table-striped table-hover">  <tr>
-              <th>Number</th>
+              <th>#</th>
               <th>Gender</th>
               <th>Enc/Wk</th>
               <th>Age</th>
-              <th>Credits</th>
+              <th>Creds</th>
               <th>GPA</th>
 
             </tr>
@@ -87,6 +104,7 @@
             </table>
           </div>
         </div>
+            </small>
       </div>
     </div>
 
