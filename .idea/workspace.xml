@@ -8,7 +8,7 @@
     <file path="$PROJECT_DIR$/log/development.log" changelist="bf61c8d4-01fd-4a67-9419-3c21fade9f13" time="1369410061714" ignored="false" />
     <file path="/application.html.erb" changelist="bf61c8d4-01fd-4a67-9419-3c21fade9f13" time="1369853672429" ignored="false" />
     <file path="/index.html.erb" changelist="bf61c8d4-01fd-4a67-9419-3c21fade9f13" time="1369409558506" ignored="false" />
-    <file path="/dashboard.html.erb" changelist="bf61c8d4-01fd-4a67-9419-3c21fade9f13" time="1370122092301" ignored="false" />
+    <file path="/dashboard.html.erb" changelist="bf61c8d4-01fd-4a67-9419-3c21fade9f13" time="1370178193453" ignored="false" />
     <file path="/surveys_controller.rb" changelist="bf61c8d4-01fd-4a67-9419-3c21fade9f13" time="1369410364970" ignored="false" />
     <file path="/_form.html.erb" changelist="bf61c8d4-01fd-4a67-9419-3c21fade9f13" time="1369413040469" ignored="false" />
     <file path="/new.html.erb" changelist="bf61c8d4-01fd-4a67-9419-3c21fade9f13" time="1369411636528" ignored="false" />
@@ -48,7 +48,7 @@
       <file leaf-file-name="application.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="18" selection-start="446" selection-end="446" vertical-scroll-proportion="-11.25">
+            <state line="18" column="18" selection-start="446" selection-end="446" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -63,10 +63,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dashboard.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="dashboard.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/surveys/dashboard.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="94" selection-start="854" selection-end="859" vertical-scroll-proportion="0.3488372">
+            <state line="27" column="23" selection-start="1110" selection-end="1110" vertical-scroll-proportion="-15.0">
               <folding />
             </state>
           </provider>
@@ -99,10 +99,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_form.html.erb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="_form.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/surveys/_form.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="106" selection-start="944" selection-end="944" vertical-scroll-proportion="0.0">
+            <state line="30" column="106" selection-start="944" selection-end="944" vertical-scroll-proportion="0.2369186">
               <folding />
             </state>
           </provider>
@@ -158,7 +158,7 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="215" />
+    <option name="x" value="214" />
     <option name="y" value="40" />
     <option name="width" value="2127" />
     <option name="height" value="1353" />
@@ -480,11 +480,11 @@
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="recentsLimit" value="5" />
     <property name="options.lastSelected" value="org.jetbrains.plugins.ruby.settings.RubyIdeSdkConfigurable" />
-    <property name="dynamic.classpath" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="recentsLimit" value="5" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="dynamic.classpath" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -815,12 +815,12 @@
       <method />
     </configuration>
     <list size="6">
-      <item index="0" class="java.lang.String" itemvalue="Ruby.survey" />
-      <item index="1" class="java.lang.String" itemvalue="IRB console.Rails console: springsurvey" />
-      <item index="2" class="java.lang.String" itemvalue="Rake.test" />
-      <item index="3" class="java.lang.String" itemvalue="Rake.spec" />
-      <item index="4" class="java.lang.String" itemvalue="Rails.Production: springsurvey" />
-      <item index="5" class="java.lang.String" itemvalue="Rails.Development: springsurvey" />
+      <item index="0" class="java.lang.String" itemvalue="Rake.test" />
+      <item index="1" class="java.lang.String" itemvalue="Rake.spec" />
+      <item index="2" class="java.lang.String" itemvalue="Rails.Production: springsurvey" />
+      <item index="3" class="java.lang.String" itemvalue="Rails.Development: springsurvey" />
+      <item index="4" class="java.lang.String" itemvalue="Ruby.survey" />
+      <item index="5" class="java.lang.String" itemvalue="IRB console.Rails console: springsurvey" />
     </list>
     <recent_temporary>
       <list size="2">
@@ -856,15 +856,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="215" y="40" width="2127" height="1353" extended-state="0" />
+    <frame x="214" y="40" width="2127" height="1353" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25949064" sideWeight="0.6001622" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3998378" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26189333" sideWeight="0.6001622" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3998378" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32927817" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1002,13 +1002,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/surveys/_form.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="106" selection-start="944" selection-end="944" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.rvm/rubies/ruby-1.9.2-p318/lib/ruby/1.9.1/irb.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="166" column="0" selection-start="3416" selection-end="3416" vertical-scroll-proportion="0.0">
@@ -1039,14 +1032,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="18" selection-start="446" selection-end="446" vertical-scroll-proportion="-11.25">
+        <state line="18" column="18" selection-start="446" selection-end="446" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/surveys/dashboard.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="94" selection-start="854" selection-end="859" vertical-scroll-proportion="0.3488372">
+        <state line="27" column="23" selection-start="1110" selection-end="1110" vertical-scroll-proportion="-15.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/surveys/_form.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="106" selection-start="944" selection-end="944" vertical-scroll-proportion="0.2369186">
           <folding />
         </state>
       </provider>

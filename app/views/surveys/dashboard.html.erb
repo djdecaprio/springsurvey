@@ -16,16 +16,16 @@
         <div id="collapseOne" class="accordion-body collapse in">
           <div class="well well-small">
             <table class="table table-condensed table-hover">
-              <TR><th colspan=5>Averages</th></TR>
+              <TR><th colspan=5><%= number_with_precision((Survey.find_all_by_gender(2).count.to_f/Survey.count.to_f)*100.0, :precision => 2) %>% Male</th></TR>
               <Tr>
-              <th>Dude%</th>
+              <th></th>
               <th>Enc/Wk</th>
               <th>Age</th>
               <th>Credits</th>
               <th>GPA</th>
             </tr>
               <tr>
-                <TD><%= number_with_precision((Survey.find_all_by_gender(2).count.to_f/Survey.count.to_f)*100.0, :precision => 2) %>%</TD>
+                <TD>Avg</TD>
                 <TD><%= number_with_precision(Survey.average('ecnounters') , :precision => 2)%></TD>
                 <TD><%= number_with_precision(Survey.average('age'), :precision => 2) %></TD>
                 <TD><%= number_with_precision(Survey.average('credits'), :precision => 2) %></TD>
