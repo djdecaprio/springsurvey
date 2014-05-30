@@ -1,5 +1,5 @@
 class Survey < ActiveRecord::Base
-  attr_accessible :age, :credits, :ecnounters, :gender, :gpa, :user_id
+  attr_accessible :age, :credits, :ecnounters, :gender, :gpa, :user_id, :race_id, :drug_id, :frequency
 
   def self.correlation_matrix
     the_encounters = Array.new

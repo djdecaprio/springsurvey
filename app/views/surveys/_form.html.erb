@@ -13,6 +13,20 @@
       </ul>
     </div>
   <% end %>
+        <div class="control-group">
+          <label class="control-label" for="selectGender">Most Frequently Used Drug:</label>
+          <div class="controls">
+            <%= f.select(:drug_id, Drug.all.collect {|p| [p.drug_name, p.id]}) %>
+          </div>
+        </div>
+
+
+        <div class="control-group">
+          <label class="control-label" for="inputEncounters">Frequency of Use:</label>
+          <div class="controls">
+            <%= f.select(:gender, [['Daily', 1], ['Several times per week', 2], ['Once or twice per week', 3],['A few times per month',4 ], ['A few times per year', 5], ['Tried it once', 6], ['I do not use drugs at all', 7]]) %>
+          </div>
+        </div>
 
 
         <div class="control-group">
@@ -23,9 +37,9 @@
         </div>
 
         <div class="control-group">
-          <label class="control-label" for="inputEncounters">Encounters Per Week:</label>
+          <label class="control-label" for="selectGender">Race:</label>
           <div class="controls">
-            <%= f.text_field :ecnounters%>
+            <%= f.select(:race_id, Race.all.collect {|p| [p.name, p.id]}) %>
           </div>
         </div>
 
