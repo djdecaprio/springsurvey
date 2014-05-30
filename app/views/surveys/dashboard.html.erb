@@ -2,7 +2,7 @@
   <div class="span12">
 
     <h1>Spring Surveys</h1>
-    <%= button_to "Take the Survey Today!", new_survey_path, :id => "survey_button",
+    <%= button_to "Take the Survey", new_survey_path, :id => "survey_button",
                   :class => "btn btn-primary", :method => :get %>
 
     <div class="accordion" id="accordion2">
@@ -19,28 +19,28 @@
               <TR><th colspan=5><%= number_with_precision((Survey.find_all_by_gender(2).count.to_f/Survey.count.to_f)*100.0, :precision => 2) %>% Male</th></TR>
               <Tr>
               <th></th>
-              <th>Enc/Wk</th>
+              <th>Uses/Wk</th>
               <th>Age</th>
               <th>Credits</th>
               <th>GPA</th>
             </tr>
               <tr>
                 <TD>Avg</TD>
-                <TD><%= number_with_precision(Survey.average('ecnounters') , :precision => 2)%></TD>
+                <TD><%= number_with_precision(Survey.average('frequency') , :precision => 2)%></TD>
                 <TD><%= number_with_precision(Survey.average('age'), :precision => 2) %></TD>
                 <TD><%= number_with_precision(Survey.average('credits'), :precision => 2) %></TD>
                 <TD><%= number_with_precision(Survey.average('gpa'), :precision => 2) %></TD>
               </tr>
               <tr>
                 <TD>Max</TD>
-                <TD><%= number_with_precision(Survey.maximum('ecnounters') , :precision => 2)%></TD>
+                <TD><%= number_with_precision(Survey.maximum('frequency') , :precision => 2)%></TD>
                 <TD><%= number_with_precision(Survey.maximum('age'), :precision => 2) %></TD>
                 <TD><%= number_with_precision(Survey.maximum('credits'), :precision => 2) %></TD>
                 <TD><%= number_with_precision(Survey.maximum('gpa'), :precision => 2) %></TD>
               </tr>
               <tr>
                 <TD>Min</TD>
-                <TD><%= number_with_precision(Survey.minimum('ecnounters') , :precision => 2)%></TD>
+                <TD><%= number_with_precision(Survey.minimum('frequency') , :precision => 2)%></TD>
                 <TD><%= number_with_precision(Survey.minimum('age'), :precision => 2) %></TD>
                 <TD><%= number_with_precision(Survey.minimum('credits'), :precision => 2) %></TD>
                 <TD><%= number_with_precision(Survey.minimum('gpa'), :precision => 2) %></TD>
@@ -79,7 +79,7 @@
             <table class="table table-condensed table-striped table-hover">  <tr>
               <th>#</th>
               <th>Gender</th>
-              <th>Enc/Wk</th>
+              <th>Uses/Wk</th>
               <th>Age</th>
               <th>Creds</th>
               <th>GPA</th>
