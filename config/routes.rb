@@ -1,4 +1,7 @@
 Springsurvey::Application.routes.draw do
+  resources :drugs
+
+
   resources :surveys
 
   # The priority is based upon order of creation:
