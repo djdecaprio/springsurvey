@@ -55,7 +55,7 @@ class SurveysController < ApplicationController
 
     respond_to do |format|
       if @survey.save
-        format.html { redirect_to root_path, notice: 'Survey was successfully created.' }
+        format.html { redirect_to thanks_surveys_path, notice: 'Survey was successfully created.' }
         format.json { render json: @survey, status: :created, location: @survey }
       else
         format.html { render action: "new" }
