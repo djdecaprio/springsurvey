@@ -1,4 +1,7 @@
 Springsurvey::Application.routes.draw do
+  resources :frequencies
+
+
   resources :races
 
 

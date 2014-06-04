@@ -1,3 +1,5 @@
+<%= request.remote_ip %>
+
 <div class="row-fluid">
   <div class="span12">
     <h4>Spring Survey</h4>
@@ -13,6 +15,7 @@
       </ul>
     </div>
   <% end %>
+        <%= f.hidden_field :ip_address, :value => request.remote_ip.to_s, :id => "the-ip" %>
         <div class="control-group">
           <label class="control-label" for="selectGender">Most Frequently Used Drug:</label>
           <div class="controls">
@@ -24,7 +27,7 @@
         <div class="control-group">
           <label class="control-label" for="inputEncounters">Frequency of Use:</label>
           <div class="controls">
-            <%= f.select(:frequency, [['Daily', 1], ['Several times per week', 2], ['Once or twice per week', 3],['A few times per month',4 ], ['A few times per year', 5], ['Tried it once', 6], ['I do not use drugs at all', 7]]) %>
+            <%= f.select(:frequency_id, Frequency.all.collect {|p| [p.name, p.id]}) %>
           </div>
         </div>
 

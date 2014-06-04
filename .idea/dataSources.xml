@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="DataSourceManagerImpl" format="xml" hash="2981068505">
+  <component name="DataSourceManagerImpl" format="xml" hash="1836770067">
     <data-source source="LOCAL" name="Rails springsurvey: development" uuid="3f8f6268-2322-4afd-86eb-31c931f7d66f">
       <driver-ref>sqlite.xerial</driver-ref>
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>

@@ -3,30 +3,36 @@
 <h1>Spring Surveys</h1>
 
   <table class="table table-condensed table-hover">  <tr>
+    <th>Drug</th>
+    <th>Frequency</th>
     <th>Gender</th>
-    <th>Ecnounters</th>
+    <th>Race</th>
     <th>Age</th>
     <th>Credits</th>
     <th>Gpa</th>
-    <th>User</th>
+    <th>User IP</th>
     <th></th>
     <th></th>
     <th></th>
   </tr>
 
 <% @surveys.each do |survey| %>
+        <% unless survey.drug.nil? %>
   <tr>
+    <td><%= survey.drug.drug_name unless survey.drug.nil? %></td>
+    <td><%= survey.frequency.name  unless survey.frequency.nil? %></td>
     <td><%= survey.gender %></td>
-    <td><%= survey.ecnounters %></td>
+    <td><%= survey.race.name unless survey.race.nil? %></td>
     <td><%= survey.age %></td>
     <td><%= survey.credits %></td>
     <td><%= survey.gpa %></td>
-    <td><%= survey.user_id %></td>
+    <td><%= survey.ip_address unless survey.ip_address.nil?  %></td>
     <td><%= link_to 'Show', survey %></td>
     <td><%= link_to 'Edit', edit_survey_path(survey) %></td>
     <td><%= link_to 'Destroy', survey, method: :delete, data: { confirm: 'Are you sure?' } %></td>
   </tr>
 <% end %>
+        <% end %>
 </table>
 
 <br />

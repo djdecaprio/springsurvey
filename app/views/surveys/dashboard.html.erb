@@ -26,21 +26,21 @@
             </tr>
               <tr>
                 <TD>Avg</TD>
-                <TD><%= number_with_precision(Survey.average('frequency') , :precision => 2)%></TD>
+                <TD><%= number_with_precision(Survey.average('frequency_id') , :precision => 2)%></TD>
                 <TD><%= number_with_precision(Survey.average('age'), :precision => 2) %></TD>
                 <TD><%= number_with_precision(Survey.average('credits'), :precision => 2) %></TD>
                 <TD><%= number_with_precision(Survey.average('gpa'), :precision => 2) %></TD>
               </tr>
               <tr>
                 <TD>Max</TD>
-                <TD><%= number_with_precision(Survey.maximum('frequency') , :precision => 2)%></TD>
+                <TD><%= number_with_precision(Survey.maximum('frequency_id') , :precision => 2)%></TD>
                 <TD><%= number_with_precision(Survey.maximum('age'), :precision => 2) %></TD>
                 <TD><%= number_with_precision(Survey.maximum('credits'), :precision => 2) %></TD>
                 <TD><%= number_with_precision(Survey.maximum('gpa'), :precision => 2) %></TD>
               </tr>
               <tr>
                 <TD>Min</TD>
-                <TD><%= number_with_precision(Survey.minimum('frequency') , :precision => 2)%></TD>
+                <TD><%= number_with_precision(Survey.minimum('frequency_id') , :precision => 2)%></TD>
                 <TD><%= number_with_precision(Survey.minimum('age'), :precision => 2) %></TD>
                 <TD><%= number_with_precision(Survey.minimum('credits'), :precision => 2) %></TD>
                 <TD><%= number_with_precision(Survey.minimum('gpa'), :precision => 2) %></TD>
