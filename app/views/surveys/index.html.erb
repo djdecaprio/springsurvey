@@ -27,7 +27,7 @@
     <td><%= survey.age %></td>
     <td><%= survey.credits %></td>
     <td><%= survey.gpa %></td>
-    <td><%= survey.school.name unless survey.school.nil?  %></td>
+    <td><%= survey.school.name.titleize unless survey.school.nil?  %></td>
     <td><%= survey.ip_address unless survey.ip_address.nil?  %></td>
     <td><%= link_to 'Show', survey %></td>
     <td><%= link_to 'Edit', edit_survey_path(survey) %></td>

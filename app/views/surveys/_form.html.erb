@@ -48,7 +48,7 @@
         <div class="control-group">
           <label class="control-label" for="selectGender">School:</label>
           <div class="controls">
-            <%= f.select(:school_id, School.all.collect {|p| [p.name, p.id]}) %>
+            <%= f.select(:school_id, School.all.collect {|p| [p.name.titleize, p.id]}) %>
           </div>
         </div>
 
